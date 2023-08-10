@@ -1,15 +1,16 @@
-function calcularMedia(){
+//removendo uma posição dentro da array com o comando splice
 
-    var nota1 = parseFloat(document.getElementById("nota1").value);
-    var nota2 = parseFloat(document.getElementById("nota2").value);
-    var nota3 = parseFloat(document.getElementById("nota3").value);
-}
+var arr1 = [1, 2, 3, 4, 5, 6, 7];
+arr1.splice(2, 2);
 
-if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)){
-    document.getElementById("resultado").innerHTML = "Por favor, insira sua nota: "
-    return;
-}
+console.log(arr1);
 
-var media = (nota1 + nota2 + nota3) / 3;
+//removendo nomes da lista e adicionando outros no lugar
 
-document.getElementById("resultado").innerHTML = "A média é: " + media.toFixed(2);
+var nomes = ["Maria", " João", " Lucas", " Pedro"];
+console.log(`\nLista de nomes: ${nomes}`);
+
+var novos = nomes.splice(1, 1, "Luiz");
+
+console.log(`\nRemovendo o ${novos} e adicionando o "Luiz" na lista.`);
+console.log(`\nLista com novo nome adicionado: ${nomes}\n`);
