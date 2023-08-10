@@ -1,15 +1,8 @@
-function calcularMedia(){
+var idade = 27
+console.log(typeof(idade));
 
-    var nota1 = parseFloat(document.getElementById("nota1").value);
-    var nota2 = parseFloat(document.getElementById("nota2").value);
-    var nota3 = parseFloat(document.getElementById("nota3").value);
+if(typeof(nome) == "number"){
+    console.log(nome.toLocaleUpperCase());
+}else{
+    console.log("Você precisa usar um numero")
 }
-
-if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)){
-    document.getElementById("resultado").innerHTML = "Por favor, insira sua nota: "
-    return;
-}
-
-var media = (nota1 + nota2 + nota3) / 3;
-
-document.getElementById("resultado").innerHTML = "A média é: " + media.toFixed(2);
