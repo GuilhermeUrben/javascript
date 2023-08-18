@@ -27,8 +27,6 @@ if (valor !== undefined) {
     console.log("\nVocê escolheu: " + bebida + ".");
     console.log("Valor a pagar: R$" + valor.toFixed(2));
 }
-
-
 const prompt = require("prompt-sync")();
 
 // Solicitar a escolha da bebida ao cliente
